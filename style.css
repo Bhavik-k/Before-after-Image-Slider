@@ -1,0 +1,38 @@
+*{margin: 0;padding: 0;border: 0;box-sizing: border-box;}
+
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 80vw;
+    height: 90vh;
+}
+.img-container-before, .img-container-after{
+    position: absolute;
+    overflow: hidden;
+}
+.img-container-before{
+    width: 40vw;
+}
+img{
+    width: 80vw;
+    height: 90vh;
+    object-fit: scale-down;
+}
+
+.slider{
+    width: 0.5rem;
+    background-color: #ffffff;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
